@@ -47,7 +47,8 @@ class MainActivity : AppCompatActivity(), OnClickListener {
     }
 
     override fun onClick(p0: View?) {
-        val intent = Intent(this, ImageActivity::class.java)
+        //val intent = Intent(this, ImageActivity::class.java)
+        val intent = Intent(this, AnotherActivity::class.java)
         val value = when (p0?.id) {
             main.btnGundam.id -> {
                 Toast.makeText(this, "건담 이미지", Toast.LENGTH_SHORT).show()
